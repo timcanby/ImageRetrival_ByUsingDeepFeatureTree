@@ -43,6 +43,9 @@ The number of matchable images ranges from 1 to 20,000 (since we haven't tried m
 
 ![](ReadME_image/7169591F0130AC75B0F13A16B230C127.png)
 
+Borrowed Flask template：https://github.com/kudeh/image-search-engine, you can build your own retrieval application like：
+
+
 Authors
 -------
 
