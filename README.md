@@ -24,15 +24,21 @@ Run :
 ```python
 python3 F2X_processing.py 
 ```
+
 To read the data and get your tree structure images_Tree.xml,next you can try a search experiment:
-
-
 
 run:
 ```python
-python3 SealsCharacters_Segmentation.py --ImageSelecter=imageDir(default='Binarization2.jpg') 
-Ex.python3 SealsCharacters_Segmentation.py --ImageSelecter=Binarization2.jpg
+python3 Hog_extractor.py 
 ```
+Obtain features for calculating similarity，of course you can train a Siamese network，It depends on the data you have.
+
+Choose an image of your test and see the results by
+```python
+python3 search_example.py
+```
+You can get more similar images by adjusting the parameter 'degree'(from 0, take integers).The bigger the number 'degree', the more images you get. Be careful not to exceed the depth of the whole Imagetree.
+
 The number of matchable images ranges from 1 to 20,000 (since we haven't tried more than 20,000 experiments yet)When there are 100 images in the target image, the tree image is formed as follows:
 
 ![](ReadME_image/7169591F0130AC75B0F13A16B230C127.png)
